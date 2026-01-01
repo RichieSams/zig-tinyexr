@@ -1,0 +1,18 @@
+.{
+    .name = .tinyexr,
+    .version = "1.0.12",
+    .fingerprint = 0x8d74b9cb3b98396a,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .tinyexr = .{
+            .url = "git+https://github.com/syoyo/tinyexr.git?ref=v1.0.12#735ff73ce5959cf005eb99ce517c9bcecab89dfb",
+            .hash = "N-V-__8AAGC4nQHVa2CJUUb6saSEtcSR7c3wMfzHy9oF6m1g",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
