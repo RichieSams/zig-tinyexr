@@ -41,7 +41,7 @@ pub fn build(b: *std.Build) void {
         .files = &.{"tinyexr.cc"},
         .flags = &.{"-std=c++11"},
     });
-    tinyexr.linkLibrary(miniz);
+    tinyexr.root_module.linkLibrary(miniz);
     tinyexr.installHeader(upstream.path("tinyexr.h"), "tinyexr.h");
 
     b.installArtifact(tinyexr);
